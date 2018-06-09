@@ -2,16 +2,25 @@ package io.github.cfva14.friendlyguacamole.logging
 
 import android.util.Log
 import io.github.cfva14.friendlyguacamole.BuildConfig
+import io.github.cfva14.friendlyguacamole.GuacamoleApp
 
 /**
  * Created by Carlos Valencia on 6/8/18
  */
 
+/**
+ * Use this to log the different levels and to create the TAG's
+ * */
+
 object LogHelper {
 
-    private const val LOG_PREFIX = ""
-    private const val LOG_PREFIX_LENGTH = LOG_PREFIX.length
-    private const val MAX_LOG_TAG_LENGTH = 23
+    /**
+     * If name and length are not provided, default values will be used.
+     * */
+
+    private val LOG_PREFIX = "${GuacamoleApp.getInstance().guacamoleName}__"
+    private val LOG_PREFIX_LENGTH = LOG_PREFIX.length
+    private val MAX_LOG_TAG_LENGTH = GuacamoleApp.getInstance().guacamoleNameLength
 
     private fun makeLogTag(str: String) : String {
         if (str.length > MAX_LOG_TAG_LENGTH - LOG_PREFIX_LENGTH) {
