@@ -68,7 +68,7 @@ object LogHelper {
         } else {
             val sb = StringBuilder()
             for (m in messages) {
-                sb.append(m)
+                sb.append("$m ")
             }
             if (t != null) {
                 sb.append("\n").append(Log.getStackTraceString(t))

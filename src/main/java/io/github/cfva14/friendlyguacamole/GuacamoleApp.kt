@@ -6,6 +6,9 @@ import android.app.Application
  * Created by Carlos Valencia on 6/8/18
  */
 
+/**
+ * Extending this class is required or app will crash
+ */
 open class GuacamoleApp : Application() {
 
     /**
