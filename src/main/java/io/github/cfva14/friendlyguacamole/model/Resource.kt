@@ -1,6 +1,6 @@
-package io.github.cfva14.friendlyguacamole.data
+package io.github.cfva14.friendlyguacamole.model
 
-import io.github.cfva14.friendlyguacamole.data.Status.*
+import io.github.cfva14.friendlyguacamole.model.Status.*
 
 /**
  * Created by Carlos Valencia on 6/9/18
